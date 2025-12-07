@@ -10,7 +10,7 @@ Despite these constraints, we demonstrate that transfer learning from massively 
 
 The work serves multiple purposes beyond technical demonstration. It provides a computational tool for historians and linguists working with colonial-era texts, contributes to preservation of indigenous linguistic heritage, and offers a reproducible case study in applying modern NLP techniques to historically significant languages with minimal available data.
 
-This work was conducted as part of a Natural Language Processing course at the University of São Paulo (USP) in 2025, conducted by professor Dr. Marcelo Finger. The full technical report detailing methodology, experiments, and analysis is available in the `docs/` directory.
+This work was conducted as part of a Natural Language Processing course at the University of São Paulo (USP) in 2025, conducted by Professor Marcelo Finger. The full technical report detailing methodology, experiments, and analysis is available in the `docs/` directory.
 
 ## Installation
 
