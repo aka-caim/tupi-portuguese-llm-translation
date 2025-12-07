@@ -1,0 +1,66 @@
+\documentclass[12pt, a4paper]{article}
+
+% language packages
+\usepackage[T1]{fontenc} % 8-bit font encoding (for correct diacritic display)
+\usepackage[utf8]{inputenc} % enables diacritics in source code
+\usepackage[portuges]{babel} % enables brazilian portuguese language standards
+
+% other packages
+\usepackage{amsmath, amssymb, amsfonts, amsthm} % math packages
+\usepackage{graphicx, xcolor} % images and colors
+\usepackage{bm} % bold in math mode
+\usepackage{geometry} % adjust margins
+
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{caption}
+
+\geometry{left=3cm,right=2cm,top=3cm,bottom=2cm}
+\onehalfspacing
+
+\setlength{\parindent}{0pt}	% no indentation
+\setlength{\parskip}{1em} % space between paragraphs
+
+\title{Avaliação de modelo baseado em LLM para tradução Português $\leftrightarrow$ Tupi Antigo} 
+
+\begin{document}
+	
+	% FOLHA DE ROSTO
+	\thispagestyle{empty}
+	\begin{center}
+		{\Large \textbf{Avaliação de modelo baseado em LLM para tradução Português $\leftrightarrow$ Tupi Antigo}\par}
+		
+		\vspace{1cm}
+		
+		{\large 
+			\begin{tabular}{@{}c@{\hspace{2em}}c@{}}
+				Caio Morais Sales 1 & Cauê Fornielles da Costa \\
+				12557268 & 14564489 \\
+				\texttt{caiomorais@usp.br} & \texttt{caueosta@usp.br}
+			\end{tabular}
+			\par}
+		
+		\vspace{1cm}
+		
+		{\large Relatório do EP2 da disciplina de Introdução ao Processamento de Língua Natural (MAC0508) \par}
+		
+		\vspace{1cm}
+		
+		{\large Professor: Marcelo Finger\par}
+		
+		\vspace{1cm}
+		
+		{\large \textbf{São Paulo, SP}\par}
+		{\large \textbf{\the\year}\par}
+	\end{center}
+	
+	\vspace{2cm}
+	
+	\begin{abstract}
+		Este trabalho investiga a aplicação de modelos de linguagem de grande porte para tradução automática bidirecional entre português e Tupi Antigo em cenário de extremo baixo recurso. Utilizando o modelo NLLB-200-distilled-600M, conduzimos experimentos nos regimes \textit{zero-shot} e \textit{few-shot} com \textit{fine-tuning}, avaliando performance através de métricas automáticas (BLEU, chrF) e análise linguística qualitativa. Os resultados demonstram que, apesar do Tupi Antigo não estar presente no pré-treinamento do modelo, o \textit{fine-tuning} com aproximadamente 1500 pares de sentenças produziu melhorias significativas sobre o baseline \textit{zero-shot}, alcançando BLEU $\sim$0.30 e chrF $>$0.50. A análise qualitativa revela aprendizado genuíno de padrões linguísticos, embora limitações persistam em vocabulário completo e morfologia complexa.
+	\end{abstract}
+
+\input{report.tex}
+
+\end{document}
