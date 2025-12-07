@@ -4,7 +4,7 @@ Neural machine translation system for Portuguese <-> Old Tupi (Tupinambá) using
 
 ## Overview
 
-This project implements bidirectional translation between Portuguese and Old Tupi, a historical language from the Tupi-Guarani family spoken by indigenous populations along the Brazilian coast during the colonial period (16th-18th centuries). The language presents an extreme low-resource scenario with only approximately 1,500 parallel sentence pairs available, restricted primarily to religious texts, and crucially, Old Tupi is completely absent from the NLLB-200 model's pretraining data.
+This project implements bidirectional translation between Portuguese and Old Tupi, a historical language from the Tupi-Guarani family spoken by indigenous populations along the Brazilian coast during the colonial period (16th-18th centuries). The language presents an extreme low-resource scenario with only approximately 7,800 parallel sentence pairs available, restricted primarily to religious texts, and crucially, Old Tupi is completely absent from the NLLB-200 model's pretraining data.
 
 Despite these constraints, we demonstrate that transfer learning from massively multilingual models enables usable translation quality. Fine-tuning the NLLB-200-distilled-600M model on our limited corpus produces improvements of 100-250% over zero-shot baselines, achieving BLEU scores around 0.30 and chrF scores exceeding 0.50 in both translation directions. These results align with performance reported for other indigenous languages in similar low-resource conditions.
 
