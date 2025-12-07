@@ -134,5 +134,4 @@ The NLLB-200 model and methodology are described in Costa-jussà et al. (2022), 
 
 For questions, issues, or collaboration inquiries, open an issue on GitHub or contact the authors:
 
-Caio Morais Sales [caiomorais@usp.br]
-Cauê Fornielles da Costa [caueosta@usp.br]
+Caio Morais Sales [caiomorais@usp.br] and Cauê Fornielles da Costa [caueosta@usp.br]
